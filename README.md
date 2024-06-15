@@ -1,2 +1,2 @@
 # projager
-open source project manager web site
+project manager web site
