@@ -1,0 +1,28 @@
+package vindex
+
+import "github.com/SpectralJager/projager/view"
+
+templ Page() {
+	@view.Base() {
+		<div class="flex flex-col gap-8">
+			<div class="flex flex-row justify-between items-center">
+				<h1 class="text-xl">Your projects</h1>
+				<a href="#" class="btn">New project</a>
+			</div>
+			<div class="flex flex-col gap-2">
+				@ProjectItem()
+				@ProjectItem()
+				@ProjectItem()
+				@ProjectItem()
+				@ProjectItem()
+			</div>
+		</div>
+	}
+}
+
+templ ProjectItem() {
+	<div class="flex flex-row justify-between w-full py-2">
+		<span>Awesome Steel Pizza</span>
+		<span>32</span>
+	</div>
+}
